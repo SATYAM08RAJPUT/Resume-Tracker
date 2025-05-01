@@ -23,6 +23,7 @@ function App() {
   };
   return (
     <>
+      <h2>JOB APPLIED TRACKER</h2>
       <JobForm onAdd={addJob} />
       <Dashboard jobs={jobs} />
       <JobList jobs={jobs} />

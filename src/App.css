@@ -1,42 +1,84 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* Dashboard Section */
+.dashboard {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 6px solid #4caf50;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.dashboard h2 {
+  margin-top: 0;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard p {
+  margin: 8px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Job Form */
+form {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 6px solid #2196f3;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+form input,
+form select,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  background: #2196f3;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #0b7dda;
 }
 
-.card {
-  padding: 2em;
+/* Job List */
+h2 {
+  margin-bottom: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+/* Job Item */
+.job-item {
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid #ff9800;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+.job-item h3 {
+  margin-top: 0;
+}
+.job-item a {
+  display: inline-block;
+  margin-top: 5px;
+  color: #2196f3;
+  text-decoration: none;
+}
+.job-item a:hover {
+  text-decoration: underline;
+}
+.job-item small {
+  display: block;
+  margin-top: 10px;
+  color: #666;
 }
